@@ -1,0 +1,4 @@
+.blurCircle {
+    box-shadow: 40px 40px 500px 250px rgba(56, 87, 159, 0.15);
+    border-radius: 100%;
+}
