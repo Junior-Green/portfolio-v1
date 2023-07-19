@@ -13,16 +13,38 @@ module.exports = {
       xl: '1440px',
     },
     extend: {
+      height: {
+        '10v': '10vmax',
+        '20v': '20vmax',
+        '30v': '30vmax',
+        '40v': '40vmax',
+        '50v': '50vmax',
+        '60v': '60vmax',
+        '70v': '70vmax',
+        '80v': '80vmax',
+        '90v': '90vmax',
+      },
+      width: {
+        '10v': '10vmax',
+        '20v': '20vmax',
+        '30v': '30vmax',
+        '40v': '40vmax',
+        '50v': '50vmax',
+        '60v': '60vmax',
+        '70v': '70vmax',
+        '80v': '80vmax',
+        '90v': '90vmax',
+      },
       colors: {
         theme: {
           blue: '#0F172A',
           green: {
-            dark: '#122B39',
-            light: '#57DDCA'
+            dark: '#134E4A',
+            light: '#2DD4BF'
           },
           gray: {
             light: '#8B9CB7',
-            dark: '#3E4D68'
+            dark: '#64748B'
           }
         }
       },
@@ -30,6 +52,17 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      },
+      textOpacity: {
+        '10': '0.1',
+        '20': '0.2',
+        '30': '0.3',
+        '40': '0.4',
+        '50': '0.5',
+        '60': '0.6',
+        '70': '0.7',
+        '80': '0.8',
+        '90': '0.9',
       },
     },
   },

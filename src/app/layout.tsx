@@ -25,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className='bg-theme-blue w-full h-full overflow-hidden'>
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} w-full h-full`}>{children}</body>
     </html>
   )
 }

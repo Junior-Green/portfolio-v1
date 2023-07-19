@@ -7,7 +7,7 @@ const FollowCursor = () => {
     const [position, setPosition] = useState({ x: 0, y: 0 });
 
     const handleMouseMove = (event: any) => {
-        setPosition({ x: event.clientX - 40, y: event.clientY - 40 });
+        setPosition({ x: event.clientX - 2, y: event.clientY - 2 });
     };
 
     useEffect(() => {
@@ -23,7 +23,7 @@ const FollowCursor = () => {
 
     return (
         <div
-            className={`follow-div bg-transparent absolute ${styles.blurCircle}`}
+            className={`bg-theme-blue absolute ${styles.blurCircle} w-1 h-1 bg-opacity-0 pointer-events-none`}
             style={{ left: position.x, top: position.y }}
         ></div>
     );

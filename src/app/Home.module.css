@@ -1,0 +1,17 @@
+.container:hover .line {
+    width: 60px;
+    background-color: white;
+}
+
+.container span {
+    transition: color 200ms ease-in-out;
+}
+
+.container:hover span {
+    color: white
+}
+
+.line {
+    transition: all 200ms ease-in-out;
+    width: 30px;
+}
