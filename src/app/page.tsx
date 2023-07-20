@@ -14,7 +14,7 @@ export default function Home() {
           <div className="h-full w-full">
             <Link href={"/"} className="font-semibold text-6xl text-white">Junior Green</Link>
             <h1 className="font-normal text-white text-xl mt-2">Jr. Software Engineer</h1>
-            <p className="font-light text-theme-gray-light text-base mt-2 mb-16 w-3/4">Highly skilled Software Engineer adept at creating robust, modern programs.</p>
+            <p className="font-light text-theme-gray-light text-base mt-2 mb-16 w-3/4">Highly skilled Junior Engineer adept at building robust, modern software.</p>
             <div className={`flex flex-row items-center justify-start ${styles.container} cursor-pointer mb-6 w-min`}>
               <div className={`h-px bg-theme-gray-dark rounded-lg mr-5 ${styles.line}`} />
               <span className="text-sm font-medium text-theme-gray-light">ABOUT</span>
@@ -40,6 +40,8 @@ export default function Home() {
           </div>
         </div>
         <div className="overflow-x-hidden h-full w-1/2">
+          <p className="text-theme-gray-light font-light">Hello my name</p>
+
         </div>
       </div>
       <FollowCursor />
