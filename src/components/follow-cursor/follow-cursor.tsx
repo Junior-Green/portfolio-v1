@@ -7,7 +7,7 @@ const FollowCursor = () => {
     const [position, setPosition] = useState({ x: 0, y: 0 });
 
     const handleMouseMove = (event: any) => {
-        setPosition({ x: event.clientX - 2, y: event.clientY - 2 });
+        setPosition({ x: event.clientX, y: event.clientY + window.scrollY});
     };
 
     useEffect(() => {

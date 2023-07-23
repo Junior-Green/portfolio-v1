@@ -7,12 +7,17 @@ module.exports = {
   ],
   theme: {
     screens: {
-      sm: '480px',
+      sm: '100px',
       md: '768px',
       lg: '976px',
       xl: '1440px',
     },
     extend: {
+      cursor: {
+        ball: 'url(/rl-ball.png), auto',
+        dumbbell: 'url(/dumbbell.png), auto',
+      },
+
       height: {
         '10v': '10vmax',
         '20v': '20vmax',
@@ -37,8 +42,12 @@ module.exports = {
       },
       colors: {
         theme: {
-          blue: '#0F172A',
-          green: '#70E48E',
+          blue: '#070b14',
+          green: {
+            light: '#70E48E',
+            dark: '#07260f'
+          },
+
           gray: {
             light: '#8B9CB7',
             dark: '#64748B'
