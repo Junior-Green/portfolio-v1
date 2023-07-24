@@ -20,8 +20,7 @@ const Project = ({ imgSrc, projectName, desc, languagesAndFrameworks, link }: Pr
             <div className={` ${styles.container} "w-full min-h-min`}>
                 <div className="w-full h-full bg-transparent rounded-lg p-5 flex md:flex-row sm:flex-col-reverse items-start justify-start hover:shadow-xl hover:bg-slate-600 hover:bg-opacity-20 transition-colors hover:border-t-slate-500 border-t-[1px] hover:border-opacity-20 border-t-transparent">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={imgSrc} alt={"project photo"} className="md:w-1/4 sm:w-1/2 h-auto rounded-md hover:border-theme-gray-light border-2 border-slate-800 mr-4 transition-colors" />
-
+                    <img src={imgSrc} alt={"project photo"} className="md:w-1/4 sm:w-1/2 sm:max-w-[150px] md:max-w-none h-auto rounded-md hover:border-theme-gray-light border-2 border-slate-800 mr-4 transition-colors sm:mt-2 lg:mt-0" />
                     <div className="flex flex-col md:w-3/4 sm:w-full h-auto">
                         <div className={`${styles.arrow} hover:text-theme-green-light transition-colors`}>
                             <h1 className="inline-block mr-1">{projectName}</h1>
