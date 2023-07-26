@@ -107,10 +107,10 @@ export default function Projects() {
                                 )
                             })}
                         </div>
-                        <Link className={`${styles.arrowDiagonal} transition-colors md:w-[20%] sm:w-[46%] text-sm font-medium pr-5 text-theme-gray-light hover:text-theme-green-light`} href={`https://${link}`}>
+                        {link !== "" && <Link className={`${styles.arrowDiagonal} transition-colors md:w-[20%] sm:w-[46%] text-sm font-medium pr-5 text-theme-gray-light hover:text-theme-green-light`} href={`https://${link}`}>
                             <h1 className="inline-block mr-1">{link}</h1>
-                            {link !== "" && <RightArrowIcon className="-rotate-45 inline-block fill-theme-gray-light transition-transform" width={14} height={14} />}
-                        </Link>
+                            <RightArrowIcon className="-rotate-45 inline-block fill-theme-gray-light transition-transform" width={14} height={14} />
+                        </Link>}
                     </div>
                 )
             })}
