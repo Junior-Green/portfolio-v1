@@ -1,3 +1,4 @@
+import FollowCursor from '@/components/follow-cursor/follow-cursor'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
@@ -18,13 +19,13 @@ export const metadata: Metadata = {
   },
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className='bg-theme-blue w-full h-full overflow-hidden'>
+    <html lang="en" className=' w-full h-auto bg-theme-blue overflow-x-hidden'>
       <body className={`${inter.className} w-full h-full`}>{children}</body>
     </html>
   )

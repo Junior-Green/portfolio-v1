@@ -15,3 +15,7 @@
     transition: all 200ms ease-in-out;
     width: 30px;
 }
+
+.arrow:hover *:nth-child(2) {
+    transform: translateX(10px);
+}

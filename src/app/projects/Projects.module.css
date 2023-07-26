@@ -1,0 +1,12 @@
+.arrow:hover div {
+    transform: translateX(-10px);
+}
+
+.arrowDiagonal:hover *:nth-child(2) {
+    transform: translateX(5px) translateY(-5px) rotate(-45deg);
+    fill: rgb(112 228 142)
+}
+
+.arrowDiagonal:hover span{
+    color: rgb(112 228 142)
+}
