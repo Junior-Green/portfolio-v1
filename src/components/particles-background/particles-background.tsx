@@ -5,11 +5,7 @@ import { particlesConfig } from "./particles-config"
 import { useCallback, useEffect, useState } from "react";
 import { loadSlim } from "tsparticles-slim";
 
-interface ParticlesBackground {
-    onLoad: () => void
-}
-
-export const ParticlesBackground = ({ onLoad }: ParticlesBackground) => {
+export const ParticlesBackground = () => {
     const [domLoaded, setDomLoaded] = useState(false);
 
     useEffect(() => {
@@ -19,8 +15,7 @@ export const ParticlesBackground = ({ onLoad }: ParticlesBackground) => {
     const particlesInit = useCallback(async (engine: Engine) => {
         console.log(engine);
         await loadSlim(engine)
-        onLoad()
-    }, [onLoad]);
+    }, []);
 
     const particlesLoaded = useCallback(async (container: any) => {
         console.log(container);

@@ -1,3 +1,4 @@
+import FollowCursor from '@/components/follow-cursor/follow-cursor'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'

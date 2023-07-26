@@ -16,10 +16,6 @@
     width: 30px;
 }
 
-.underline {
-    transition: text-decoration-color 500ms;
-}
-
 .arrow:hover *:nth-child(2) {
     transform: translateX(10px);
 }

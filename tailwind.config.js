@@ -8,9 +8,7 @@ module.exports = {
   theme: {
     screens: {
       sm: '100px',
-      md: '768px',
-      lg: '976px',
-      xl: '1440px',
+      md: '720px',
     },
     extend: {
       cursor: {

@@ -23,7 +23,7 @@ const FollowCursor = () => {
 
     return (
         <div
-            className={`bg-theme-blue absolute ${styles.blurCircle} w-1 h-1 bg-opacity-0 pointer-events-none sm:opacity-0 lg:opacity-100`}
+            className={`bg-theme-blue absolute ${styles.blurCircle} w-1 h-1 bg-opacity-0 pointer-events-none sm:opacity-0 md:opacity-100`}
             style={{ left: position.x, top: position.y }}
         />
     );
