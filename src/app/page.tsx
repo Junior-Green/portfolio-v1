@@ -28,11 +28,11 @@ export default function Home() {
   }
 
   return (
-    <main className="w-full h-full leading-relaxed tracking-wide flex md:flex-row px-[8%] sm:flex-col">
+    <main className="w-full h-full leading-relaxed tracking-wide flex md:flex-row md:px-[8%] sm:px-[4%] sm:flex-col">
       <ParticlesBackground />
-      <div className="md:sticky md:top-0 py-[8%] md:h-[100vh] sm:auto md:w-1/2 sm:w-full flex flex-col justify-between items-start ">
+      <div className="md:sticky md:top-0 py-[8%] md:h-[100vh] md:w-1/2 sm:w-full flex flex-col justify-between items-start ">
         <div className="h-full w-full">
-          <Link href={"/"} className="font-semibold text-6xl text-white pr-5">{name}</Link>
+          <Link href={"/"} className="font-semibold md:text-6xl sm:text-5xl text-white pr-5">{name}</Link>
           <h1 className="font-normal text-white text-xl mt-2">{title}</h1>
           <p className="font-light text-theme-gray-light text-base mt-2 mb-16 w-3/4">{desc}</p>
           <div className={`flex flex-row items-center justify-start ${styles.container} cursor-pointer mb-6 w-min`} onClick={() => scrollToRef(aboutRef)}>
@@ -59,7 +59,10 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <div className=" h-auto md:w-1/2 sm:w-full py-[8%] flex flex-col" ref={aboutRef}>
+      <div className="mb-5 sm:sticky sm:top-0 md:hidden backdrop-blur-sm h-14 w-full flex items-center justify-start">
+        <h2 className="font-semibold tracking-widest text-sm" ref={aboutRef}>ABOUT</h2>
+      </div>
+      <div className=" h-auto md:w-1/2 sm:w-full md:py-[8%] sm:pb-[8%] flex flex-col">
         <p className="text-theme-gray-light font-light">
           I remember my first time creating my very first program back in 2017 when I took a highschool class focused on making games using a legacy version of <Link href={"https://gamemaker.io/en"} className="text-white font-medium hover:text-theme-green-light transition-colors">GameMaker Creator</Link>. I am very fortunate to have discovered my passion relatively early. Now, I am on my way to graduating from <Link href={"https://carleton.ca/about/"} className="text-white font-medium hover:text-theme-green-light transition-colors">Carleton University</Link> in Computer Science in efforts to pursue a career in Software Engineering.
           <br />
@@ -74,7 +77,9 @@ export default function Home() {
           <RightArrowIcon width={14} height={14} className="fill-white transition-transform" />
         </div>
 
-        <h2 className="sm:opacity-100 md:opacity-0 mb-5 font-semibold tracking-widest" ref={projectsRef}>PROJECTS</h2>
+        <div className="mb-5 sm:sticky sm:top-0 md:hidden backdrop-blur-sm h-14 w-full flex items-center justify-start">
+          <h2 className="font-semibold tracking-widest text-sm" ref={projectsRef}>PROJECTS</h2>
+        </div>
         <ListView>
           <Project imgSrc={"/trakit-thumbnail.png"} projectName={"TrakIt"} desc={"A web application that allows you to effortlessly store, analyze, and visualize your personal sports statistics. It provides a comprehensive dashboard that provides a visual overview of your sports performance."} languagesAndFrameworks={['Next.js', 'Tailwind CSS', 'MongoDB', 'Vercel', 'TypeScript']} link={"https://trakit-two.vercel.app/"} />
           <Project imgSrc={"/portfolio.png"} projectName={"juniorgreen.ca"} desc={"My online portfolio to showcase my highlights, projects and experience."} languagesAndFrameworks={['Next.js', 'Tailwind CSS', 'Vercel', 'TypeScript']} link={"/"} />
@@ -86,19 +91,19 @@ export default function Home() {
           <a href="/projects" className={`decoration-transparent whitespace-nowrap font-medium mr-1 transition-all`}>View All Projects</a>
           <RightArrowIcon width={14} height={14} className="fill-white transition-transform" />
         </div>
-        <p className="font-extralight text-sm text-theme-gray-dark w-5/6 mt-10">
+        <p className="font-light text-sm text-theme-gray-dark w-5/6 mt-10">
           This website was made from scratch in
-          <Link href={"https://code.visualstudio.com"} className="text-theme-gray-light font-light hover:text-theme-green-light transition-colors"> Visual Studio Code
+          <Link href={"https://code.visualstudio.com"} className="text-theme-gray-light hover:text-theme-green-light transition-colors"> Visual Studio Code
           </Link> using
-          <Link href={"https://nextjs.org"} className="text-theme-gray-light font-light hover:text-theme-green-light transition-colors"> Next.js
+          <Link href={"https://nextjs.org"} className="text-theme-gray-light hover:text-theme-green-light transition-colors"> Next.js
           </Link> and
-          <Link href={"https://tailwindcss.com"} className="text-theme-gray-light font-light hover:text-theme-green-light transition-colors"> Tailwind CSS
+          <Link href={"https://tailwindcss.com"} className="text-theme-gray-light hover:text-theme-green-light transition-colors"> Tailwind CSS
           </Link> frameworks, alongside the assistance of
-          <Link href={"https://openai.com/gpt-4"} className="text-theme-gray-light font-light hover:text-theme-green-light transition-colors"> GPT-4
+          <Link href={"https://openai.com/gpt-4"} className="text-theme-gray-light hover:text-theme-green-light transition-colors"> GPT-4
           </Link>. Deployed using
-          <Link href={"https://vercel.com"} className="text-theme-gray-light font-light hover:text-theme-green-light transition-colors"> Vercel
+          <Link href={"https://vercel.com"} className="text-theme-gray-light hover:text-theme-green-light transition-colors"> Vercel
           </Link> under my own domain. Layout and web design inspired by
-          <Link href={"https://brittanychiang.com/"} className="text-theme-gray-light font-light hover:text-theme-green-light transition-colors"> Brittany Chiang
+          <Link href={"https://brittanychiang.com/"} className="text-theme-gray-light hover:text-theme-green-light transition-colors"> Brittany Chiang
           </Link>.
         </p>
       </div>

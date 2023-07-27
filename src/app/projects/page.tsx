@@ -86,8 +86,8 @@ export default function Projects() {
             </div>
             <h1 className="text-5xl tracking-normal font-bold"> Projects</h1>
             <div className="w-full flex flex-row items-start mt-16 mb-3 font-medium text-sm">
-                <span className="w-[8%] mr-2">Year</span>
-                <span className="md:w-[28%] sm:w-[46%]">Project</span>
+                <span className="w-[8%] sm:mr-3 md:mr-0">Year</span>
+                <span className="md:w-[26%] sm:w-[46%]">Project</span>
                 <span className="w-[18%] sm:hidden md:block">Made at</span>
                 <span className="w-[28%] sm:hidden md:block">Tech Stack</span>
                 <span className="md:w-[20%] sm:w-[46%]">Link</span>
@@ -95,14 +95,14 @@ export default function Projects() {
             {projects.map(({ year, projectName, placeMade, toolsUsed, link }) => {
                 return (
                     <div className="w-full flex flex-row items-start mb-2 border-t-[0.5px] border-t-theme-gray-dark border-opacity-40 pt-3" key={projectName}>
-                        <span className="w-[8%] text-sm font-light text-theme-gray-light mr-2">{year}</span>
-                        <span className="md:w-[28%] sm:w-[46%] pr-5 font-medium">{projectName}</span>
+                        <span className="w-[8%] text-sm font-light text-theme-gray-light sm:mr-3 md:mr-0">{year}</span>
+                        <span className="md:w-[26%] sm:w-[46%] pr-5 font-medium">{projectName}</span>
                         <span className="w-[18%] sm:hidden md:block font-light pr-5 text-theme-gray-light">{placeMade}</span>
                         <div className="w-[28%] flex sm:hidden md:flex flex-row flex-wrap pr-5">
                             {toolsUsed.map((val) => {
                                 return (
                                     <div key={val} className="rounded-full px-3 bg-theme-green-dark w-auto h-auto mr-2 mb-2 py-[4px]">
-                                        <span className="text-theme-green-light text-xs whitespace-nowrap font-light">{val}</span>
+                                        <span className="text-theme-green-light text-xs whitespace-nowrap">{val}</span>
                                     </div>
                                 )
                             })}
