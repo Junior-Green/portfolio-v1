@@ -59,8 +59,9 @@ export default function Home() {
           </a>
         </div>
       </div>
+      <div ref={aboutRef} />
       <div className="mb-5 sm:sticky sm:top-0 md:hidden backdrop-blur-sm h-14 w-full flex items-center justify-start">
-        <h2 className="font-semibold tracking-widest text-sm" ref={aboutRef}>ABOUT</h2>
+        <h2 className="font-semibold tracking-widest text-sm">ABOUT</h2>
       </div>
       <div className=" h-auto md:w-1/2 sm:w-full md:py-[8%] sm:pb-[8%] flex flex-col">
         <p className="text-theme-gray-light font-light">
@@ -77,8 +78,9 @@ export default function Home() {
           <RightArrowIcon width={14} height={14} className="fill-white transition-transform" />
         </div>
 
+        <div ref={projectsRef} />
         <div className="mb-5 sm:sticky sm:top-0 md:hidden backdrop-blur-sm h-14 w-full flex items-center justify-start">
-          <h2 className="font-semibold tracking-widest text-sm" ref={projectsRef}>PROJECTS</h2>
+          <h2 className="font-semibold tracking-widest text-sm" >PROJECTS</h2>
         </div>
         <ListView>
           <Project imgSrc={"/trakit-thumbnail.png"} projectName={"TrakIt"} desc={"A web application that allows you to effortlessly store, analyze, and visualize your personal sports statistics. It provides a comprehensive dashboard that provides a visual overview of your sports performance."} languagesAndFrameworks={['Next.js', 'Tailwind CSS', 'MongoDB', 'Vercel', 'TypeScript']} link={"https://trakit-two.vercel.app/"} />
