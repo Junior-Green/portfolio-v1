@@ -21,7 +21,7 @@ export default function Home() {
   const email = "juniorgreen9185@hotmail.com"
   const title = "Graduate Software Engineer"
   const name = "Junior Green"
-  const desc = "Highly skilled Graduate Engineer adept at building robust, modern software."
+  const desc = "Highly skilled Developor adept at building robust, modern software."
 
   function scrollToRef(ref: RefObject<HTMLDivElement>) {
     ref.current?.scrollIntoView({ behavior: 'smooth' });
