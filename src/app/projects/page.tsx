@@ -46,7 +46,7 @@ export default function Projects() {
             year: 2019,
             projectName: 'Gacha 4',
             placeMade: '',
-            toolsUsed: ['Dart', 'Flutter', 'Firebase', 'TypeScript'],
+            toolsUsed: ['Android Studio', 'Java', 'Gradle'],
             link: 'github.com/Junior-Green/Gacha-Simulator'
         },
         {
