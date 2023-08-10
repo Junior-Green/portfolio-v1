@@ -21,7 +21,7 @@ export default function Home() {
   const email = "juniorgreen9185@hotmail.com"
   const title = "Graduate Software Engineer"
   const name = "Junior Green"
-  const desc = "Highly skilled Developor adept at building robust, modern software."
+  const desc = "Highly skilled Front-End Developor adept at building robust, modern software."
 
   function scrollToRef(ref: RefObject<HTMLDivElement>) {
     ref.current?.scrollIntoView({ behavior: 'smooth' });
@@ -68,10 +68,10 @@ export default function Home() {
           I remember my first time creating my very first program back in 2017 when I took a highschool class focused on making games using a legacy version of <Link href={"https://gamemaker.io/en"} className="text-white font-medium hover:text-theme-green-light transition-colors">GameMaker Creator</Link>. I am very fortunate to have discovered my passion relatively early. Now, I am on my way to graduating from <Link href={"https://carleton.ca/about/"} className="text-white font-medium hover:text-theme-green-light transition-colors">Carleton University</Link> in Computer Science in efforts to pursue a career in Software Engineering.
           <br />
           <br />
-          I prefer not to label myself as a specific type of developer, because I believe a great developer has the capacity to learn and use every tool in their toolbox, however I do favor front-end and mobile development the most. The most enjoyable experience I have had creating a application was using <Link href={"https://flutter.dev/"} className="text-white font-medium hover:text-theme-green-light transition-colors">Flutter</Link> and <Link href={"https://dart.dev/"} className="text-white font-medium hover:text-theme-green-light transition-colors">Dart</Link> to create <Link href={"https://github.com/Junior-Green/hangr"} className="text-white font-medium hover:text-theme-green-light transition-colors">Hangr</Link>.
+          I excel in front-end development environments, most notably using <Link href={"https://nextjs.org/"} className="text-white font-medium hover:text-theme-green-light transition-colors">Next.js</Link> and <Link href={"https://angular.io/"} className="text-white font-medium hover:text-theme-green-light transition-colors">Angular</Link>. I have also dabbled in mobile development a little bit. The most enjoyable experience I have had creating a mobile application was using <Link href={"https://flutter.dev/"} className="text-white font-medium hover:text-theme-green-light transition-colors">Flutter</Link> and <Link href={"https://dart.dev/"} className="text-white font-medium hover:text-theme-green-light transition-colors">Dart</Link> to create <Link href={"https://github.com/Junior-Green/hangr"} className="text-white font-medium hover:text-theme-green-light transition-colors">Hangr</Link>.
           <br />
           <br />
-          When I am not typing away at my computer, I am either at the <span className="text-white font-medium hover:text-theme-green-light cursor-dumbbell transition-colors">gym</span>  trying to break a new PR, watching random videos on <Link href={"https://www.youtube.com/"} className="text-white font-medium hover:text-red-600 transition-colors">Youtube</Link>, or trying to attain the rank of Grand Champion in <span className="text-white font-medium hover:text-theme-green-light cursor-ball transition-colors">Rocket League</span>.
+          When I am not typing away at my computer, I am either at the <span className="text-white font-medium hover:text-theme-green-light cursor-dumbbell transition-colors">gym</span>  trying to break a new PR, indulging in a new narrative from a book I recently picked up, or trying to attain the rank of Grand Champion in <span className="text-white font-medium hover:text-theme-green-light cursor-ball transition-colors">Rocket League</span>.
         </p>
         <div className={`mt-5 flex flex-row items-center ${styles.arrow} hover:underline hover:decoration-theme-green-light w-min mb-20 underline-offset-4`}>
           <a href="/resume.pdf" className={`decoration-transparent whitespace-nowrap font-medium mr-1 transition-all`}>View Résumé</a>
