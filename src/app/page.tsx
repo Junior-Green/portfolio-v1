@@ -19,9 +19,9 @@ export default function Home() {
   const iconSize = 20
   const phoneNumber = "6475718450"
   const email = "juniorgreen9185@hotmail.com"
-  const title = "Graduate Software Engineer"
+  const title = "Software Engineer"
   const name = "Junior Green"
-  const desc = "Highly skilled Front-End Developor adept at building robust, modern software."
+  const desc = "Highly skilled Full Stack Engineer adept at building robust, modern software."
 
   function scrollToRef(ref: RefObject<HTMLDivElement>) {
     ref.current?.scrollIntoView({ behavior: 'smooth' });
