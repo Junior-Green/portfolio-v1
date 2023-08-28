@@ -104,9 +104,7 @@ export default function Home() {
           <Link href={"https://openai.com/gpt-4"} className="text-theme-gray-light hover:text-theme-green-light transition-colors"> GPT-4
           </Link>. Deployed using
           <Link href={"https://vercel.com"} className="text-theme-gray-light hover:text-theme-green-light transition-colors"> Vercel
-          </Link> under my own domain. Layout and web design inspired by
-          <Link href={"https://brittanychiang.com/"} className="text-theme-gray-light hover:text-theme-green-light transition-colors"> Brittany Chiang
-          </Link>.
+          </Link> under my own domain.
         </p>
       </div>
       <FollowCursor />
