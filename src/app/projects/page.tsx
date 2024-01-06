@@ -15,6 +15,13 @@ interface ProjectData {
 export default function Projects() {
     const projects: ProjectData[] = [
         {
+            year: 2024,
+            projectName: 'Crunchyroll Clone',
+            placeMade: '',
+            toolsUsed: ['Typescript', 'Angular', 'Tailwind CSS', 'SCSS', 'Firebase'],
+            link: 'crunchyroll-a7d82.web.app'
+        },
+        {
             year: 2023,
             projectName: 'TrakIt',
             placeMade: '',
