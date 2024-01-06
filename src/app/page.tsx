@@ -108,6 +108,7 @@ export default function Home() {
           </Link>. Deployed using
           <Link href={"https://vercel.com"} className="text-theme-gray-light hover:text-theme-green-light transition-colors"> Vercel
           </Link> under my domain.
+
         </p>
       </div>
       <FollowCursor />
