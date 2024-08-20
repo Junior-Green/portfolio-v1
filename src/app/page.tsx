@@ -21,7 +21,7 @@ export default function Home() {
   const email = "juniorgreen9185@hotmail.com"
   const title = "Full Stack Engineer"
   const name = "Junior Green"
-  const desc = "Full Stack Developer proficient in crafting robust, modern software solutions."
+  const desc = "Full Stack Engineer proficient in crafting robust, modern software solutions."
 
   function scrollToRef(ref: RefObject<HTMLDivElement>) {
     ref.current?.scrollIntoView({ behavior: 'smooth' });
@@ -86,6 +86,7 @@ export default function Home() {
           <h2 className="font-semibold tracking-widest text-sm" >PROJECTS</h2>
         </div>
         <ListView>
+          <Project imgSrc={"/Y.png"} projectName={"Y - (In Development)"} desc={"Social media web platform inspired by X (formerly known as Twitter)."} languagesAndFrameworks={['TypeScript', 'Vite', 'PostgreSQL', 'Java', 'Spring Boot', 'Hibernate', 'AWS', 'Tailwind CSS', 'Docker']} link={""} />
           <Project imgSrc={"/crunchyroll.png"} projectName={"Crunchyroll Clone"} desc={"Clone of crunchyroll.com"} languagesAndFrameworks={['Typescript', 'Angular', 'Tailwind CSS', 'SCSS', 'Firebase']} link={"https://crunchyroll-a7d82.web.app"} />
           <Project imgSrc={"/trakit-thumbnail.png"} projectName={"TrakIt"} desc={"A web application that allows you to effortlessly store, analyze, and visualize your personal sports statistics. It provides a comprehensive dashboard that provides a visual overview of your sports performance."} languagesAndFrameworks={['Next.js', 'Tailwind CSS', 'MongoDB', 'Vercel', 'TypeScript']} link={"https://trakit-two.vercel.app/"} />
           <Project imgSrc={"/portfolio.png"} projectName={"juniorgreen.ca"} desc={"My online portfolio to showcase my highlights, projects and experience."} languagesAndFrameworks={['Next.js', 'Tailwind CSS', 'Vercel', 'TypeScript']} link={"/"} />

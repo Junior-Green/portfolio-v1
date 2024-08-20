@@ -16,6 +16,13 @@ export default function Projects() {
     const projects: ProjectData[] = [
         {
             year: 2024,
+            projectName: 'Y - (In Development)',
+            placeMade: '',
+            toolsUsed: ['TypeScript', 'Vite', 'PostgreSQL', 'Java', 'Spring Boot', 'Hibernate', 'AWS', 'Tailwind CSS', 'Docker'],
+            link: ''
+        },
+        {
+            year: 2023,
             projectName: 'Crunchyroll Clone',
             placeMade: '',
             toolsUsed: ['Typescript', 'Angular', 'Tailwind CSS', 'SCSS', 'Firebase'],
