@@ -18,7 +18,7 @@ export default function Home() {
 
   const iconSize = 20
   const phoneNumber = "6475718450"
-  const email = "juniorgreen9185@hotmail.com"
+  const email = "jujugreen10@gmail.com"
   const title = "Full Stack Engineer"
   const name = "Junior Green"
   const desc = "Full Stack Engineer proficient in crafting robust, modern software solutions."
