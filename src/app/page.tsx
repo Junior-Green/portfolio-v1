@@ -12,7 +12,9 @@ import ListView from "@/components/list-view/list-view"
 import NavigationRef from "@/components/navigation-ref/navigation-ref"
 import Experience from "@/components/experience/experience"
 
-
+function scroll(ref: RefObject<HTMLDivElement>) {
+  ref.current?.scrollIntoView({ behavior: "smooth" })
+}
 
 export default function Home() {
   const aboutRef = useRef<HTMLDivElement>(null);
@@ -28,21 +30,17 @@ export default function Home() {
   const name = "Junior Green"
   const desc = "Expert in designing scalable and maintainable modern software solutions."
 
-  function scroll(ref: RefObject<HTMLDivElement>) {
-    ref.current?.scrollIntoView({ behavior: "smooth" })
-  }
-
   const navigateToAbout = useCallback(() => {
     scroll(aboutRef)
-  }, [aboutRef, scroll])
+  }, [aboutRef])
 
   const navigateToPersonal = useCallback(() => {
     scroll(personalRef)
-  }, [personalRef, scroll])
+  }, [personalRef])
 
   const navigateToProfessional = useCallback(() => {
     scroll(professionalRef)
-  }, [professionalRef, scroll])
+  }, [professionalRef])
 
   return (
     <main className="w-full h-full leading-relaxed tracking-wide flex md:flex-row md:px-[8%] sm:px-[4%] sm:flex-col">
@@ -94,7 +92,7 @@ export default function Home() {
           <h2 className="font-semibold tracking-widest text-sm" >CAREER</h2>
         </div>
         <ListView>
-          {[<Experience from={new Date()} to={"present"} logo={"/google-logo.png"} company={"Google, GHP"} desc={"Under the Platform and Devices team I scaled the Google Home Platform (GHP) API, enabling seamless integration for 10,000+ third-party devices and applications. Played a key role in advancing the Matter standard, enhancing local communication reliability for 100M+ smart home devices globally. Delivered scalable solutions that powered 1B+ user interactions annually, solidifying Google's position as the leading platform for smart home technology within an international competitive market."} languagesAndFrameworks={["Kotlin", "C++"]} />]}
+          {[<Experience key={0} from={new Date(2025, 3)} to={"present"} logo={"/google-logo.png"} company={"Google, GHP"} desc={"Under the Platform and Devices team I scaled the Google Home Platform (GHP) API, enabling seamless integration for 10,000+ third-party devices and applications. Played a key role in advancing the Matter standard, enhancing local communication reliability for 100M+ smart home devices globally. Delivered scalable solutions that powered 1B+ user interactions annually, solidifying Google's position as the leading platform for smart home technology within an international competitive market."} languagesAndFrameworks={["Kotlin", "C++"]} />]}
         </ListView>
 
         <div className={`mt-3 flex flex-row items-center ${styles.arrow} hover:underline hover:decoration-theme-green-light w-min mb-10 underline-offset-4`}>
